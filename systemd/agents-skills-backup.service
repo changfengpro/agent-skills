@@ -1,0 +1,6 @@
+[Unit]
+Description=Back up ~/.agents skills into git
+
+[Service]
+Type=oneshot
+ExecStart=/home/rmer/project/git/skills/scripts/backup-agents-skills.sh

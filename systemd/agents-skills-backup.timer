@@ -1,0 +1,9 @@
+[Unit]
+Description=Run agents skills backup daily at 20:30
+
+[Timer]
+OnCalendar=*-*-* 20:30:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
