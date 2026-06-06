@@ -1,0 +1,17 @@
+{
+  "skill_name": "techdoc-writer",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "我刚在板子上调通了 UART DMA 接收超时的问题。代码仓库在 ~/.claude/skills/techdoc-writer-workspace/fixtures/uart-dma（共 3 个 commit），调试日志在仓库根目录的 debug.log。把这次从 PIO 切 DMA、到修掉 rx 超时和缓冲溢出的全过程，整理成一份正式的官方风格技术文档（类似 Rockchip 开发指南那种），输出为一个 markdown 文件。",
+      "expected_output": "Rockchip 风格骨架的 markdown 技术文档：前言（含修订记录）、Chapter-N 编号、故障五段式（引用 debug.log 原文）、解决方案带真实 git diff、术语表（DMA/PIO/FIFO 等全称）、故障速查表",
+      "files": ["~/.claude/skills/techdoc-writer-workspace/fixtures/uart-dma"]
+    },
+    {
+      "id": 1,
+      "prompt": "把我们修 /users 接口 database is locked 这个 bug 的过程写成一份正式严谨的技术文档，要有故障分析、解决方案（带实际代码改动）和术语表。仓库在 ~/.claude/skills/techdoc-writer-workspace/fixtures/flask-api，错误日志 error.log 在仓库根目录。输出 markdown 文件。",
+      "expected_output": "正式技术文档：章节编号体系、故障五段式（引用 error.log 原文 traceback）、解决方案带真实 git diff（closing/timeout 改动）、术语表含全称（SQLite 锁机制相关）",
+      "files": ["~/.claude/skills/techdoc-writer-workspace/fixtures/flask-api"]
+    }
+  ]
+}
