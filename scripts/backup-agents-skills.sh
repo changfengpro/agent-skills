@@ -3,6 +3,11 @@ set -euo pipefail
 
 SOURCE_DIR="/home/rmer/.agents"
 BACKUP_DIR="/home/rmer/project/git/skills"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Before backing up, ensure every skill has a symlink in ~/.claude/skills.
+source "$SCRIPT_DIR/link-skills.sh"
+link_missing_skills
 
 cd "$BACKUP_DIR"
 
