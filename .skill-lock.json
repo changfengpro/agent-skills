@@ -265,6 +265,15 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-06-06T03:18:40.450Z",
       "updatedAt": "2026-06-06T03:18:40.450Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-06-08T03:08:48.408Z",
+      "updatedAt": "2026-06-08T03:08:48.408Z"
     }
   },
   "dismissed": {
