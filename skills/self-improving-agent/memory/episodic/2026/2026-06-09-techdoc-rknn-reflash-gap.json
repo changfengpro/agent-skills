@@ -1,0 +1,19 @@
+{
+  "id": "ep-2026-06-09-001",
+  "timestamp": "2026-06-09T16:30:00Z",
+  "skill": "techdoc-writer",
+  "situation": "用户重走 RV1126B 上的 RKNN/YOLO 部署流程，板子是重烧过的。在板端执行 techdoc-writer 早先生成的飞书部署指南里的命令 `pip3 install --no-deps --no-index rknn_toolkit_lite2-...cp311.whl` 时报 OSError [Errno 2] No such file or directory，随后 `from rknnlite.api import RKNNLite` 也 ModuleNotFoundError。同一天另一处：重烧后 IMX219 的 iqfile（方向/亮度/白平衡）也回滚成出厂默认，画面又坏了。",
+  "root_cause": "techdoc-writer 生成的部署文档从作者已配好的机器视角写，把前置输入产物（wheel）默认成'本来就在板上'，命令直接从'使用它'起笔，没写清 wheel 的来源（SDK external/rknn-toolkit2/.../packages/）、落位（须 scp 到板端）、以及持久性（不随 rootfs 预置，重烧后丢失须重传）。iqfile 同理——重烧后回滚，文档/记忆未点名其非持久性。",
+  "solution": "把 wheel 从 SDK 相对路径 scp 到板端再用相对路径 --no-deps --no-index 安装（保 numpy 1.x / cv2 4.9.0 不被破坏）；并把缺口补进部署指南：2.3 加来源+scp 前置步骤、5.4 加'板端缺少 wheel/No such file'故障条目、6.2 文件清单加 wheel 行。",
+  "lesson": "可复现性要从一台全新/刚重烧的机器视角判定，而不是作者已配好的机器。bring-up/部署类文档里，每条消费输入产物的命令都必须写清来源/落位/持久性；重烧或 clean build 后会丢失或回滚的产物（wheel、模型、固件、被调过的配置文件）必须显式标注重做方式。",
+  "related_pattern": "artifact_provenance_and_persistence",
+  "skill_updates": [
+    "techdoc-writer/SKILL.md ③ 新增'前置物料可复现'要点",
+    "techdoc-writer/SKILL.md ⑤ 新增来源/落位/持久性自检项",
+    "techdoc-writer/references/content-patterns.md 新增第 6 节'前置物料的来源、落位与持久性'"
+  ],
+  "user_feedback": {
+    "rating": null,
+    "comments": "用户主动指出'笔记里写了飞书文档里没写'，触发本次优化"
+  }
+}

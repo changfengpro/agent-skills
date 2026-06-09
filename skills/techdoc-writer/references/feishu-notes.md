@@ -60,3 +60,10 @@
 - 结构：`fetch --scope outline --max-depth 2` 对照目录。
 - 代码块：全文 fetch 后统计 `<pre ... caption>`，确认每个解决方案都有 diff、无旧版残留。
 - 资源块：确认 whiteboard / figure 仍在且位置正确（outline 看不到资源块，需全文 fetch 或 keyword 定位）。
+
+## 7. 插入附件（media-insert）与 CLI 输出解析的坑
+
+- **`media-insert` 永远追加到文档末尾**，不在你 fetch 的那个章节位置。要让它落在某节下（如"附件"节），先确保该节就是文档最后一节，或插完再 `block_move_after` 搬到目标锚点之后。
+- **验证附件是否插入，要按命令返回的 `block_id`（或 fetch 文档末尾）确认，不能用 keyword 在标题附近找**——附件在文末，标题附近的 keyword 上下文够不着，会误判"没插入"。**误判的直接后果是重复插入**：插了两份附件，文档里就出现两条"暂时无法在飞书文档外展示此内容"。删重复用 `block_delete` 删掉多余的 `figure` block（保留验证过的那个）。
+- **lark-cli 的进度文本混在 JSON 前面**（`Inserting:...`/`Block created:...`），别直接 `json.load(stdout)`——会 `Expecting value`。先 `grep -oE '"result": *"[a-z_]+"|"ok": *(true|false)'` 抠状态，或用正则切出首个 `{...}` 再解析；`_notice.update` 也可能让贪婪正则报 `Extra data`。
+- **block_replace 之后原 block_id 失效**：替换某块后若还想在其后 `block_insert_after`，必须重新 fetch 拿新 id——拿旧 id 插会静默落空（报 ok 但不生效）。

@@ -277,12 +277,42 @@
         "Verify fix on all platforms (iOS, Android, Desktop, Web)"
       ],
       "target_skills": ["debugger"]
+    },
+    "artifact_provenance_and_persistence": {
+      "id": "pat-2026-06-09-011",
+      "name": "Document Input-Artifact Provenance, Transfer and Persistence",
+      "source": "retrospective",
+      "confidence": 0.9,
+      "applications": 1,
+      "created": "2026-06-09",
+      "category": "technical_writing",
+      "pattern": "In bring-up/deploy docs, every command that consumes an input artifact must document its source, how it reaches the execution host, and whether it survives a reflash/clean-build",
+      "problem": "Docs are written from an already-configured machine, so prerequisite artifacts (wheels, models, config files, firmware) that 'were just there' get silently assumed present. A reader re-walking the flow on a fresh/reflashed device gets stuck exactly at those omitted prerequisites (e.g. 'pip install <whl>' fails with No such file because the wheel was never on the board; a tuned iqfile reverts to defaults after reflash).",
+      "solution": {
+        "three_questions_per_consuming_command": {
+          "source": "Where the artifact comes from: repo/SDK relative path, build-output dir, download URL",
+          "transfer": "How it reaches the host running the command: scp / adb push / cp / mount",
+          "persistence": "Does it survive reflash/clean-build? If not, mark 'must re-transfer/regenerate' and link the step"
+        },
+        "commonly_lost_on_reflash": ["board-side pip/wheel installs", "/userdata models and scripts", "/etc tuned config files (e.g. iqfile)", "manually flashed firmware"],
+        "placement": [
+          "List source+transfer as explicit prerequisite steps BEFORE the use command, not inline",
+          "Add a troubleshooting entry for the reflash-loss symptom (No such file / config reverted)",
+          "Key-file appendix table column: 文件 | 位置/来源 | 是否随重烧持久 | 说明"
+        ]
+      },
+      "quality_rules": [
+        "Every artifact-consuming command states source + transfer + persistence",
+        "Non-persistent artifacts (lost/reverted on reflash) are flagged with how to redo",
+        "Reproducibility is judged from a fresh/reflashed machine, not the author's set-up box"
+      ],
+      "target_skills": ["techdoc-writer"]
     }
   },
   "meta": {
-    "version": "1.0.0",
-    "last_updated": "2025-01-12",
-    "total_patterns": 10,
-    "categories": ["prd_structure", "prd_quality", "react_patterns", "async_patterns", "ui_patterns", "architecture", "development", "debugging"]
+    "version": "1.0.1",
+    "last_updated": "2026-06-09",
+    "total_patterns": 11,
+    "categories": ["prd_structure", "prd_quality", "react_patterns", "async_patterns", "ui_patterns", "architecture", "development", "debugging", "technical_writing"]
   }
 }
