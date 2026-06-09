@@ -11,7 +11,9 @@ link_missing_skills
 
 cd "$BACKUP_DIR"
 
-rsync -a --delete "$SOURCE_DIR/skills/" "$BACKUP_DIR/skills/"
+rsync -a --delete --delete-excluded \
+  --exclude-from="$SCRIPT_DIR/backup-exclude.txt" \
+  "$SOURCE_DIR/skills/" "$BACKUP_DIR/skills/"
 rsync -a "$SOURCE_DIR/.skill-lock.json" "$BACKUP_DIR/.skill-lock.json"
 
 git add -A skills .skill-lock.json

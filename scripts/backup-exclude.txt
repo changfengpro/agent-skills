@@ -1,0 +1,10 @@
+# rsync exclude patterns for skill backups.
+# Patterns are relative to ~/.agents/skills/. One per line.
+# These are volatile runtime/state files that churn every session and
+# only add noise to the backup history.
+
+# self-improving-agent semantic memory (rewritten every run, counter bumps)
+semantic-patterns.json
+
+# self-improving-agent episodic memory (auto-generated session entries)
+episodic/
