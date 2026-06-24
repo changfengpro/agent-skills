@@ -98,7 +98,7 @@ def split_hunks(diff):
 
 ## 5. 图表
 
-- 整体架构/信号链路/流程优先用图（飞书用画板，Markdown 用 mermaid 或 ASCII）。
+- 整体架构/信号链路/流程优先用图。**飞书文档默认用飞书画板(whiteboard)呈现**——通过 **lark-whiteboard** skill 创建/更新画板(支持 PlantUML / Mermaid / 画板 DSL),**不要**把 ASCII 框图或 mermaid 源码当作文本/代码块贴进飞书文档。**仅本地 Markdown 输出**才用 ```mermaid 围栏或 ASCII。
 - 图编号 `图 <章>-<序>`，编号行放图的紧邻位置。
 - 表格前要有一句引导（"……差异如下："），不要裸表。
 
