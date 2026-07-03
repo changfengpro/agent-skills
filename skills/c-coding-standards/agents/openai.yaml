@@ -1,0 +1,4 @@
+interface:
+  display_name: "C Coding Standards"
+  short_description: "Safe, portable C coding standards"
+  default_prompt: "Use $c-coding-standards to review this C code for safety, portability, and maintainability."

@@ -441,6 +441,60 @@
       "skillFolderHash": "",
       "installedAt": "2026-06-24T09:25:24.079Z",
       "updatedAt": "2026-06-24T09:25:24.079Z"
+    },
+    "cpp-coding-standards": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/affaan-m/everything-claude-code.git",
+      "skillPath": "skills/cpp-coding-standards/SKILL.md",
+      "skillFolderHash": "f61788dbce2ff996ec7d71764f890298f784afb9",
+      "installedAt": "2026-07-03T02:49:02.037Z",
+      "updatedAt": "2026-07-03T02:49:02.037Z"
+    },
+    "write-coding-standards-from-file": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/write-coding-standards-from-file/SKILL.md",
+      "skillFolderHash": "1b515eeea72bc2c6bc4ff48485822e5f109db4ab",
+      "installedAt": "2026-07-03T02:51:24.456Z",
+      "updatedAt": "2026-07-03T02:51:24.456Z"
+    },
+    "code-review-excellence": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+      "skillFolderHash": "01df909b77da6e637490582b2899447eed1786bd",
+      "installedAt": "2026-07-03T03:43:16.489Z",
+      "updatedAt": "2026-07-03T03:43:16.489Z"
+    },
+    "security-requirement-extraction": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "skillFolderHash": "9c89a2410aad785f26a6e14b7d1b8a2ccf53093c",
+      "installedAt": "2026-07-03T03:43:24.757Z",
+      "updatedAt": "2026-07-03T03:43:24.757Z"
+    },
+    "git-advanced-workflows": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/developer-essentials/skills/git-advanced-workflows/SKILL.md",
+      "skillFolderHash": "b64f19edd9b744658a0be5b93b1569d9d0c4c619",
+      "installedAt": "2026-07-03T03:43:37.315Z",
+      "updatedAt": "2026-07-03T03:43:37.315Z"
+    },
+    "api-design-principles": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/backend-development/skills/api-design-principles/SKILL.md",
+      "skillFolderHash": "c1e5a719781eba052f8b7bf17046f6c43bbc6dab",
+      "installedAt": "2026-07-03T03:43:54.900Z",
+      "updatedAt": "2026-07-03T03:43:54.900Z"
     }
   },
   "dismissed": {
