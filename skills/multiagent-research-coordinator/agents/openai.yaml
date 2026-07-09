@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multiagent Research Coordinator"
+  short_description: "Coordinate auditable multi-agent research"
+  default_prompt: "Use $multiagent-research-coordinator to decide whether this research task should be delegated and, if so, design worker briefs and synthesis steps."
