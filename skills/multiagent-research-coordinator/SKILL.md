@@ -34,57 +34,6 @@ Before spawning workers, make a hard gate decision. Default to `do not delegate`
 
 If the gate says `do not delegate`, keep the work local with a strong model and state the reason briefly. If the user requested evaluation, record the gate result as the baseline decision rather than forcing an uneconomic worker run.
 
-## Temporary Code-Task Probe
-
-For user code tasks, generate a lightweight probe report every time this skill is used. This probe is temporary and should remain until the user asks to remove it.
-
-- Write the report under `/home/rmer/文档/测试报告/多agent调度/`.
-- Use a timestamped Markdown filename: `YYYYMMDD-HHMMSS-<short-task-slug>.md`.
-- Create the directory if it does not exist.
-- Generate the report whether the gate decision is `delegate` or `do not delegate`; a solo decision is valuable probe data.
-- Keep the report concise and auditable. Do not paste long source files, secrets, credentials, or large logs.
-- If token, model, latency, or cost data is unavailable, write `unavailable`; do not invent values. If quoting cost, use measured tokens and current verified pricing.
-
-Include these fields:
-
-```text
-# Multiagent Dispatch Probe
-
-Task: <brief user goal>
-Timestamp: <local time and timezone>
-Skill path: /home/rmer/.codex/skills/multiagent-research-coordinator/SKILL.md
-
-## Gate Decision
-- Decision: delegate / do not delegate
-- Gate result: passed / failed / user-forced benchmark
-- Triggered gate conditions: <list>
-- Rationale: <why this was or was not a good multi-agent fit>
-
-## Dispatch Plan
-- Units: <independent slices, or why none>
-- Worker count: <number and reason>
-- Model plan: <coordinator and worker model tiers if known>
-- Local critical path: <what stayed with the main agent>
-
-## Execution Trace
-- Agents spawned: <id/nickname/model/role, or none>
-- Wait/follow-up cycles: <count>
-- Files changed: <paths or none>
-- Verification commands: <commands and pass/fail>
-
-## Efficiency Data
-- Main/coordinator tokens: <input/output/total/cost or unavailable>
-- Worker tokens: <input/output/total/cost or unavailable>
-- Wall-clock time: <available timings or unavailable>
-- Subscription/quota proxy: <token volume, rate-limit info, or unavailable>
-
-## Quality Notes
-- Worker output quality: <if applicable>
-- Main-agent validation quality: <what was independently checked>
-- Rework/conflicts: <none or details>
-- Skill tuning observation: <one sentence>
-```
-
 ## Model Tier Decision
 
 - Use cheaper workers for retrieval, extraction, enumeration, log/file scanning, and first-pass evidence capture.

@@ -495,6 +495,15 @@
       "skillFolderHash": "c1e5a719781eba052f8b7bf17046f6c43bbc6dab",
       "installedAt": "2026-07-03T03:43:54.900Z",
       "updatedAt": "2026-07-03T03:43:54.900Z"
+    },
+    "humanizer-zh": {
+      "source": "op7418/humanizer-zh",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/op7418/humanizer-zh.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "91f3d394db8419c20d67ebe22a96cf8fee0a404b",
+      "installedAt": "2026-07-10T11:49:10.040Z",
+      "updatedAt": "2026-07-10T11:49:10.040Z"
     }
   },
   "dismissed": {
