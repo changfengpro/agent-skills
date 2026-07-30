@@ -129,6 +129,15 @@ XSD 中的 `title`、`headline`、`sub-headline`、`body`、`caption` 主要出�
 - `<a>`
 - `<shadow>`
 - `<outline>`
+- `<formula>`
+
+公式写法：
+
+```xml
+<p>公式：<formula><latex><![CDATA[ E = mc^2 ]]></latex></formula></p>
+```
+
+`<formula>` 是内联元素；当前只支持一个 `<latex>` 子元素。LaTeX 内容必须放在 `CDATA` 中，且 `CDATA` 内不要写 XML 转义；宏只使用服务端支持范围内的写法，优先用基础运算符、`\frac`、`\sqrt`、`matrix`。
 
 示例：
 
@@ -188,6 +197,13 @@ XSD 中的 `title`、`headline`、`sub-headline`、`body`、`caption` 主要出�
 - `<shadow>`
 - `<content>`
 
+`type` 常用取值：`text`（文本框）、`rect`、`round-rect`（圆角矩形）、`ellipse`（椭圆/圆）、`triangle`、`diamond`、`parallelogram`、`trapezoid`、`custom`（配合 `path` 属性写 SVG 路径串）。箭头、星形、标注气泡、`chevron`、`flow-chart-*` 等更多形状见 XSD `ShapeType` 枚举。
+
+其它可选属性：
+
+- `presetHandlers`：控制点，用于圆角等。例如 `<shape type="rect" presetHandlers="60">` = 圆角半径 60px 的圆角矩形；多个控制点用逗号分隔。
+- `path`：仅 `type="custom"` 时使用，SVG 路径串。
+
 ### line
 
 ```xml
@@ -197,6 +213,16 @@ XSD 中的 `title`、`headline`、`sub-headline`、`body`、`caption` 主要出�
 ```
 
 `line` 使用的是 `startX` / `startY` / `endX` / `endY`，不是 `x1` / `y1` / `x2` / `y2`。
+
+### polyline
+
+折线 / 曲线连接线，用外接矩形定位（`topLeftX` / `topLeftY` / `width` / `height`），不是端点坐标；`<border>` 必填（无 border 不可见）。`type` 默认 `bent-connector2`（可选 `bent-connector2-5` 折线 / `curved-connector2-5` 曲线）。
+
+```xml
+<polyline topLeftX="120" topLeftY="120" width="200" height="100">
+  <border color="rgb(43, 47, 54)" width="2"/>
+</polyline>
+```
 
 ### img
 
@@ -238,6 +264,7 @@ XSD 中的 `title`、`headline`、`sub-headline`、`body`、`caption` 主要出�
 - `<colgroup>` 直接子元素只有 `<col width="...">`，width 定义列宽，默认 110。
 - `<tr height="...">` 直接子元素只有 `<td>`，height 定义行高，默认 37。
 - `<td>` 直接子元素只有 `<fill>`（背景）、`<content>`（文字）和边框配置（一般不用），不能嵌套 `<shape>`、`<img>`、`<icon>`。
+- 合并单元格：`<td>` 上用 `colspan`（跨列，默认 1）和 `rowspan`（跨行，默认 1）；被合并覆盖的单元格不再写对应 `<td>`。
 
 表头默认的白底白字视觉效果极差，必须设置背景和文字颜色，需在首行每个 `<td>` 上加 `<fill>`（配合 `bold` 与对比文字色）与正文行区分。
 
@@ -293,6 +320,36 @@ XSD 中的 `title`、`headline`、`sub-headline`、`body`、`caption` 主要出�
 图表语法十分复杂，必须阅读 [slides_chart_demo.xml](slides_chart_demo.xml)，直接照抄其中的柱状、条形、折线、面积、饼（环）、雷达、组合图。
 
 `<chart>` 直接子元素必须有 `<chartPlotArea>`（绘图区）和 `<chartData>`（数据）；`<chartTitle>`、`<chartSubTitle>`、`<chartStyle>`、`<chartLegend>`、`<chartTooltip>` 可选，如果想不展示标题、副标题、图例或悬浮提示，省略相应元素标签即可。
+
+`<chartStyle>` 常用子元素：
+
+- `<chartBackground>`：`color` 省略时由渲染端决定默认背景；需要完全透明请显式写 `color="rgba(0, 0, 0, 0)"`
+- `<chartBorder>`：无边框可写 `width="0"`，或直接不写 `<chartBorder>` 元素
+
+#### 图表渐变 `<fillGradient>` / `<strokeGradient>`
+
+图表支持渐变填充/描边，`<fillGradient>` 用于面积、柱子、数据点、扇区填充，`<strokeGradient>` 用于线条、数据点边框、柱子边框。渐变只能挂在系列级或单元素级，不要挂在 `<chartPlot>` 全局层。
+
+可挂载位置：
+
+- 系列级：`<chartBars>` / `<chartPoints>` 支持 `<fillGradient>` 与 `<strokeGradient>`；`<chartLine>` 只支持 `<strokeGradient>`；`<chartArea>` / `<chartSectors>` 只支持 `<fillGradient>`
+- 单元素级：`<chartBar index="...">` / `<chartPoint index="...">` / `<chartSector index="...">` 只支持 `<fillGradient>`
+- 全局级：`<chartPlot>` 下的 `<chartLines>` / `<chartAreas>` / `<chartBars>` / `<chartPoints>` 不支持渐变
+
+结构要点：`type` 必填，可为 `linear` 或 `radial`；`linear` 用 `x0` / `y0` / `x1` / `y1`，`radial` 用 `r0` / `r1`；`<stops>` 至少包含 2 个 `<stop>`，`offset` 与 `opacity` 取值均为 `[0, 1]`。
+
+```xml
+<chartSeries index="1">
+  <chartBars>
+    <fillGradient type="linear" x0="0" y0="0" x1="0" y1="1">
+      <stops>
+        <stop offset="0" color="rgb(28, 71, 120)"/>
+        <stop offset="1" color="rgb(28, 71, 120)" opacity="0.3"/>
+      </stops>
+    </fillGradient>
+  </chartBars>
+</chartSeries>
+```
 
 隐藏 `<chart>` 的图例只能通过不写或删除 `<chartLegend>` 实现，`<chartLegend>` 不支持 `position="none"`。
 

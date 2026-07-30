@@ -6,28 +6,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/charon-fan/agent-playbook.git",
       "skillPath": "skills/self-improving-agent/SKILL.md",
-      "skillFolderHash": "cc099bdad0f644886d6862da1eb887fdaab1256a",
+      "skillFolderHash": "3056965179f9e1d809e307caf0a5d774a1bd295a",
       "installedAt": "2026-05-27T08:24:03.167Z",
-      "updatedAt": "2026-05-27T08:24:03.167Z"
+      "updatedAt": "2026-07-30T02:05:37.610Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
       "installedAt": "2026-05-27T08:29:10.000Z",
-      "updatedAt": "2026-05-27T08:29:10.000Z"
+      "updatedAt": "2026-07-30T02:05:41.054Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
-      "pluginName": "example-skills",
+      "skillFolderHash": "0d5b74a14bdf3ebcd64f352d06376a2ef05ed296",
       "installedAt": "2026-05-27T08:31:42.613Z",
-      "updatedAt": "2026-05-27T08:31:42.613Z"
+      "updatedAt": "2026-07-30T02:05:46.493Z"
     },
     "git-essentials": {
       "source": "sundial-org/awesome-openclaw-skills",
@@ -44,7 +43,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-approval/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.953Z",
-      "updatedAt": "2026-07-22T12:54:45.410Z"
+      "updatedAt": "2026-07-30T02:07:12.288Z"
     },
     "lark-apps": {
       "source": "open.feishu.cn",
@@ -52,7 +51,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-apps/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.955Z",
-      "updatedAt": "2026-07-22T12:54:45.411Z"
+      "updatedAt": "2026-07-30T02:07:12.288Z"
     },
     "lark-attendance": {
       "source": "open.feishu.cn",
@@ -60,7 +59,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-attendance/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.955Z",
-      "updatedAt": "2026-07-22T12:54:45.411Z"
+      "updatedAt": "2026-07-30T02:07:12.293Z"
     },
     "lark-base": {
       "source": "open.feishu.cn",
@@ -68,7 +67,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-base/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.955Z",
-      "updatedAt": "2026-07-22T12:54:45.411Z"
+      "updatedAt": "2026-07-30T02:07:12.293Z"
     },
     "lark-calendar": {
       "source": "open.feishu.cn",
@@ -76,7 +75,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-calendar/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.956Z",
-      "updatedAt": "2026-07-22T12:54:45.411Z"
+      "updatedAt": "2026-07-30T02:07:12.293Z"
     },
     "lark-contact": {
       "source": "open.feishu.cn",
@@ -84,7 +83,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-contact/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.956Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.294Z"
     },
     "lark-doc": {
       "source": "open.feishu.cn",
@@ -92,7 +91,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-doc/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.956Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.294Z"
     },
     "lark-drive": {
       "source": "open.feishu.cn",
@@ -100,7 +99,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-drive/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.957Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.294Z"
     },
     "lark-event": {
       "source": "open.feishu.cn",
@@ -108,7 +107,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-event/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.957Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.294Z"
     },
     "lark-im": {
       "source": "open.feishu.cn",
@@ -116,7 +115,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-im/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.957Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.295Z"
     },
     "lark-mail": {
       "source": "open.feishu.cn",
@@ -124,7 +123,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-mail/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.957Z",
-      "updatedAt": "2026-07-22T12:54:45.412Z"
+      "updatedAt": "2026-07-30T02:07:12.295Z"
     },
     "lark-markdown": {
       "source": "open.feishu.cn",
@@ -132,7 +131,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-markdown/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.958Z",
-      "updatedAt": "2026-07-22T12:54:45.413Z"
+      "updatedAt": "2026-07-30T02:07:12.295Z"
     },
     "lark-minutes": {
       "source": "open.feishu.cn",
@@ -140,7 +139,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-minutes/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.958Z",
-      "updatedAt": "2026-07-22T12:54:45.413Z"
+      "updatedAt": "2026-07-30T02:07:12.296Z"
     },
     "lark-okr": {
       "source": "open.feishu.cn",
@@ -148,7 +147,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-okr/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.958Z",
-      "updatedAt": "2026-07-22T12:54:45.413Z"
+      "updatedAt": "2026-07-30T02:07:12.297Z"
     },
     "lark-openapi-explorer": {
       "source": "open.feishu.cn",
@@ -156,7 +155,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-openapi-explorer/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.959Z",
-      "updatedAt": "2026-07-22T12:54:45.413Z"
+      "updatedAt": "2026-07-30T02:07:12.297Z"
     },
     "lark-shared": {
       "source": "open.feishu.cn",
@@ -164,7 +163,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-shared/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.959Z",
-      "updatedAt": "2026-07-22T12:54:45.415Z"
+      "updatedAt": "2026-07-30T02:07:12.297Z"
     },
     "lark-sheets": {
       "source": "open.feishu.cn",
@@ -172,7 +171,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-sheets/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.959Z",
-      "updatedAt": "2026-07-22T12:54:45.415Z"
+      "updatedAt": "2026-07-30T02:07:12.297Z"
     },
     "lark-skill-maker": {
       "source": "open.feishu.cn",
@@ -180,7 +179,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-skill-maker/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.960Z",
-      "updatedAt": "2026-07-22T12:54:45.415Z"
+      "updatedAt": "2026-07-30T02:07:12.297Z"
     },
     "lark-slides": {
       "source": "open.feishu.cn",
@@ -188,7 +187,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-slides/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.960Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.298Z"
     },
     "lark-task": {
       "source": "open.feishu.cn",
@@ -196,7 +195,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-task/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.960Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.298Z"
     },
     "lark-vc": {
       "source": "open.feishu.cn",
@@ -204,7 +203,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-vc/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.960Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.298Z"
     },
     "lark-vc-agent": {
       "source": "open.feishu.cn",
@@ -212,7 +211,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-vc-agent/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.961Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.298Z"
     },
     "lark-whiteboard": {
       "source": "open.feishu.cn",
@@ -220,7 +219,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-whiteboard/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.961Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.298Z"
     },
     "lark-wiki": {
       "source": "open.feishu.cn",
@@ -228,7 +227,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-wiki/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.961Z",
-      "updatedAt": "2026-07-22T12:54:45.416Z"
+      "updatedAt": "2026-07-30T02:07:12.299Z"
     },
     "lark-workflow-meeting-summary": {
       "source": "open.feishu.cn",
@@ -236,7 +235,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-workflow-meeting-summary/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.961Z",
-      "updatedAt": "2026-07-22T12:54:45.417Z"
+      "updatedAt": "2026-07-30T02:07:12.299Z"
     },
     "lark-workflow-standup-report": {
       "source": "open.feishu.cn",
@@ -244,7 +243,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-workflow-standup-report/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-05-27T09:28:23.962Z",
-      "updatedAt": "2026-07-22T12:54:45.417Z"
+      "updatedAt": "2026-07-30T02:07:12.299Z"
     },
     "skill-creator": {
       "source": "anthropics/skills",
@@ -261,10 +260,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
-      "skillFolderHash": "2c3a4e48571bfe42203ed7b49cae85f31ef4b6f2",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "5fdcdeedf2d0c73b3ecb1da0a464dd885590f8d6",
       "installedAt": "2026-06-06T03:18:40.450Z",
-      "updatedAt": "2026-06-17T01:58:35.933Z"
+      "updatedAt": "2026-07-30T02:05:58.294Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -300,70 +298,63 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grill-me/SKILL.md",
-      "skillFolderHash": "2a1ad17028306ebe45f0e49703fa28b9b2e7f499",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "c817f6f36acd483294144694a935a76d3e3eb101",
       "installedAt": "2026-06-17T01:58:35.933Z",
-      "updatedAt": "2026-06-17T01:58:35.933Z"
+      "updatedAt": "2026-07-30T02:06:11.279Z"
     },
     "handoff": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/handoff/SKILL.md",
-      "skillFolderHash": "7bbb60d64c911617cee7f71b2ba9e24364faa14e",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "184d485ae68a2132893a94239b2b85d253e6152b",
       "installedAt": "2026-06-17T01:58:35.934Z",
-      "updatedAt": "2026-06-17T01:58:35.934Z"
+      "updatedAt": "2026-07-30T02:06:14.487Z"
     },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "688c17ec27fe9309d84987716aca37b5ce7f3a88",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "bce229692e60dff3462e49bc5e774e83bef348e6",
       "installedAt": "2026-06-17T01:58:35.935Z",
-      "updatedAt": "2026-06-17T01:58:35.935Z"
+      "updatedAt": "2026-07-30T02:06:18.279Z"
     },
     "prototype": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/prototype/SKILL.md",
-      "skillFolderHash": "c91bdc5d02d42ed88a3082a8fa83338895b55bd4",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "dd3d782b69ccb67493fbe76b84149399da3c9fee",
       "installedAt": "2026-06-17T01:58:35.935Z",
-      "updatedAt": "2026-06-17T01:58:35.935Z"
+      "updatedAt": "2026-07-30T02:06:21.993Z"
     },
     "setup-matt-pocock-skills": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
-      "skillFolderHash": "77638955bebe492948244f1338e54ca1a9445c29",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "634cf9b010bca5701642aca736dce899822f08f7",
       "installedAt": "2026-06-17T01:58:35.935Z",
-      "updatedAt": "2026-06-17T01:58:35.935Z"
+      "updatedAt": "2026-07-30T02:06:25.108Z"
     },
     "tdd": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/tdd/SKILL.md",
-      "skillFolderHash": "75beb3030b4c979205dd771ff85ac600baeb68f4",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "0a727bd358b855cbcc1c35cfff21ef31f9ffb8de",
       "installedAt": "2026-06-17T01:58:35.936Z",
-      "updatedAt": "2026-06-17T01:58:35.936Z"
+      "updatedAt": "2026-07-30T02:06:29.047Z"
     },
     "teach": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/teach/SKILL.md",
-      "skillFolderHash": "975430f7801bac2258ed18f4d80860024443b4f7",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "15f8c86d39ef834e643d092733ca899b59049067",
       "installedAt": "2026-06-17T01:58:35.936Z",
-      "updatedAt": "2026-06-17T01:58:35.936Z"
+      "updatedAt": "2026-07-30T02:06:32.219Z"
     },
     "to-issues": {
       "source": "mattpocock/skills",
@@ -390,10 +381,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/triage/SKILL.md",
-      "skillFolderHash": "de4f182c30876a2460ca307e2f601b9b892527e5",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "258364be8354f726bf4080077cd92d86d08c69eb",
       "installedAt": "2026-06-17T01:58:35.940Z",
-      "updatedAt": "2026-06-17T01:58:35.940Z"
+      "updatedAt": "2026-07-30T02:06:35.069Z"
     },
     "write-a-skill": {
       "source": "mattpocock/skills",
@@ -420,19 +410,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/othmanadi/planning-with-files.git",
       "skillPath": "skills/planning-with-files-zh/SKILL.md",
-      "skillFolderHash": "93e22eeef2bf6fc8bc516d6950edd96f030897d9e893e7434bb80dd0a8595eda",
+      "skillFolderHash": "f1af69252a03d699d14c14dc74853498c6c16434",
       "installedAt": "2026-06-17T02:09:21.352Z",
-      "updatedAt": "2026-06-17T02:09:21.352Z"
+      "updatedAt": "2026-07-30T02:06:52.819Z"
     },
     "webapp-testing": {
       "source": "anthropics/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/webapp-testing/SKILL.md",
-      "skillFolderHash": "ad5b1fc52807e9afa4635e59218a026b164dc58b6c3f41b0f7c644dcd6ccf572",
-      "pluginName": "example-skills",
+      "skillFolderHash": "5ffb7dc66b9fd4c25c3e400a4c00da99a349b714",
       "installedAt": "2026-06-17T02:10:18.807Z",
-      "updatedAt": "2026-06-17T02:10:18.807Z"
+      "updatedAt": "2026-07-30T02:05:51.663Z"
     },
     "lark-note": {
       "source": "open.feishu.cn",
@@ -440,7 +429,7 @@
       "sourceUrl": "https://open.feishu.cn/.well-known/skills/lark-note/SKILL.md",
       "skillFolderHash": "",
       "installedAt": "2026-06-24T09:25:24.079Z",
-      "updatedAt": "2026-07-22T12:54:45.413Z"
+      "updatedAt": "2026-07-30T02:07:12.296Z"
     },
     "cpp-coding-standards": {
       "source": "affaan-m/everything-claude-code",
