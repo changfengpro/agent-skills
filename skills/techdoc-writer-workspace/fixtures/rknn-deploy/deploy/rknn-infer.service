@@ -1,0 +1,14 @@
+[Unit]
+Description=RKNN Inference Service (yolov5)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/userdata/rknn-infer
+ExecStart=/usr/bin/python3 /userdata/rknn-infer/infer_server.py --config /etc/rknn-infer/config.yaml
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

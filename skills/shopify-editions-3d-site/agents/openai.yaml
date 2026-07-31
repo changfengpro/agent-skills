@@ -1,0 +1,7 @@
+interface:
+  display_name: "Shopify Editions 3D Site"
+  short_description: "Build immersive 3D product launch sites"
+  brand_color: "#95BF47"
+  default_prompt: "Use $shopify-editions-3d-site to build an immersive 3D product launch microsite."
+policy:
+  allow_implicit_invocation: true

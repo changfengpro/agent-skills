@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project-Based Learning"
+  short_description: "Teach project code with needed fundamentals."
+  default_prompt: "Use $project-based-learning to teach this project step by step while I write the code myself."
+
+policy:
+  allow_implicit_invocation: true

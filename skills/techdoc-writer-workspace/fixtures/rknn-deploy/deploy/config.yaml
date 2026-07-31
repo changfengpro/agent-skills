@@ -1,0 +1,14 @@
+# RKNN 推理服务配置
+model:
+  path: /userdata/rknn-infer/yolov5s.rknn   # 由 PC 端 rknn-toolkit2 转换得到，须 push 到板端
+  input_size: [640, 640]
+  num_classes: 80
+
+runtime:
+  core_mask: 0          # RV1126 单核 NPU，固定 0
+  perf_detail: false
+
+server:
+  listen: 0.0.0.0
+  port: 8080
+  log_level: info

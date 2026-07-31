@@ -8,3 +8,6 @@ semantic-patterns.json
 
 # self-improving-agent episodic memory (auto-generated session entries)
 episodic/
+
+# Nested repositories must be backed up as ordinary directories.
+.git/

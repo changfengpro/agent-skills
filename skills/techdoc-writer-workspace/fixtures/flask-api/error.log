@@ -1,0 +1,18 @@
+[2026-06-10 14:22:31] POST /users  name=alice
+[2026-06-10 14:22:31] POST /users  name=bob
+[2026-06-10 14:22:36,118] ERROR in app: Exception on /users [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/userdata/flask-api/app.py", line 28, in create_user
+    cur = conn.execute("INSERT INTO users(name) VALUES (?)", (name,))
+sqlite3.OperationalError: database is locked
+[2026-06-10 14:22:36] 500 POST /users  name=bob
+[2026-06-10 14:22:41,260] ERROR in app: Exception on /users [POST]
+Traceback (most recent call last):
+  File "/userdata/flask-api/app.py", line 29, in create_user
+    conn.commit()
+sqlite3.OperationalError: database is locked
+[2026-06-10 14:22:41] 500 POST /users  name=carol
